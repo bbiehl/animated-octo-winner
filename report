@@ -1,0 +1,16 @@
+Feature: Test the Github API
+
+  Background: [90m                          # features/github.feature:3[0m
+    [32mGiven path [32m[1m"https://api.github.com"[0m[0m[32m[90m # features/step_definitions/gitub_steps.rb:3[0m[0m
+
+  Scenario: smoke test examples[90m                                                                                                         # features/github.feature:6[0m
+    [32mWhen a user requests [32m[1m"/"[0m[0m[32m[90m                                                                                                            # features/step_definitions/gitub_steps.rb:7[0m[0m
+    [32mThen they are returned [32m[1m"current_user_url"[0m[0m[32m => [32m[1m"https://api.github.com/user"[0m[0m[32m[90m                                                          # features/step_definitions/gitub_steps.rb:11[0m[0m
+    [32mThen they are returned [32m[1m"current_user_authorizations_html_url"[0m[0m[32m => [32m[1m"https://github.com/settings/connections/applications{/client_id}"[0m[0m[32m[90m # features/step_definitions/gitub_steps.rb:11[0m[0m
+    [32mThen they are returned [32m[1m"authorizations_url"[0m[0m[32m => [32m[1m"https://api.github.com/authorizations"[0m[0m[32m[90m                                              # features/step_definitions/gitub_steps.rb:11[0m[0m
+    [32mThen they are returned [32m[1m"code_search_url"[0m[0m[32m => [32m[1m"https://api.github.com/search/code?q={query}{&page,per_page,sort,order}"[0m[0m[32m[90m               # features/step_definitions/gitub_steps.rb:11[0m[0m
+    [32mThen they are returned [32m[1m"commit_search_url"[0m[0m[32m => [32m[1m"https://api.github.com/search/commits?q={query}{&page,per_page,sort,order}"[0m[0m[32m[90m          # features/step_definitions/gitub_steps.rb:11[0m[0m
+
+1 scenario ([32m1 passed[0m)
+7 steps ([32m7 passed[0m)
+0m0.263s
